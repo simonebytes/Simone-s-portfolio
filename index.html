@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Simone || Designer</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="hero" id="home">
+      <!-- Decorative frame -->
+      <div class="frame"></div>
+
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="nav-links">
+          <a href="#home" class="active">home</a>
+          <a href="#about">about</a>
+          <a href="#projects">projects</a>
+          <a href="#contact">contact</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Open navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+
+      <!-- Main hero content -->
+      <section class="hero-content">
+        <h1>
+          <span class="off-color">LET'S MAKE</span><br />
+          THINGS HAPPEN
+        </h1>
+
+        <div class="intro">
+          <p>
+            Computer Science student<br />
+            who loves building clean,<br />
+            beautiful and functional<br />
+            digital experiences.
+          </p>
+
+          <a href="#projects" class="work-link cta-link">
+            VIEW MY WORK
+            <span>↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- LOTTIE -->
+      <div id="lottie-cursor"></div>
+
+      <div class="profile-block">
+        <div class="profile-line"></div>
+
+        <div class="profile-info">
+          <h2>SIMONE OKECHUKWU</h2>
+
+          <p>CS STUDENT • UI/UX ENTHUSIAST</p>
+          <p>FRONTEND DEVELOPER</p>
+
+          <div class="social-links">
+            <a
+              href="https://github.com/simonebytes"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fa-brands fa-github" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/simone-okechukwu"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://instagram.com/quee_nsimone"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Colour indicators -->
+      <div class="color-palette">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </main>
+
+    <!-- About section -->
+    <section class="about-section" id="about">
+      <div class="about-main">
+        <div class="about-photos">
+          <div class="about-photo-frame">
+            <img
+              class="about-photo active"
+              src="images/image1.png"
+              alt="Picture one"
+            />
+            <img
+              class="about-photo"
+              src="images/image2.png"
+              alt="Picture two"
+            />
+            <img
+              class="about-photo"
+              src="images/image3.png"
+              alt="Picture three"
+            />
+
+            <button
+              class="carousel-arrow carousel-arrow-previous"
+              type="button"
+              aria-label="Show previous photo"
+            >
+              &larr;
+            </button>
+            <button
+              class="carousel-arrow carousel-arrow-next"
+              type="button"
+              aria-label="Show next photo"
+            >
+              &rarr;
+            </button>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="about-label">ABOUT ME</p>
+          <h2><span class="off-color">Hi, I'm </span>Simone.</h2>
+          <p class="about-role">
+            Computer Science Student &amp; Frontend Developer
+          </p>
+          <p class="about-bio">
+            I'm a Computer Science student and aspiring Frontend Developer who
+            loves turning ideas into thoughtful, engaging digital experiences. I
+            enjoy bringing creativity and functionality together to build
+            seamless webpages that feel intentional, expressive, and true to the
+            people or ideas behind them. For me, good design isn't just about
+            how a website looks — it's about the character it carries and how
+            naturally it connects with the people using it.
+          </p>
+
+          <a href="#contact" class="about-connect cta-link"
+            >LET'S CONNECT <span>↗</span></a
+          >
+        </div>
+      </div>
+
+      <div
+        class="about-tools"
+        aria-label="Languages and tools I'm familiar with"
+      >
+        <span
+          class="tool-icon html-icon"
+          role="img"
+          aria-label="HTML5"
+          title="HTML5"
+          ><i class="fa-brands fa-html5" aria-hidden="true"></i
+        ></span>
+        <span
+          class="tool-icon css-icon"
+          role="img"
+          aria-label="CSS3"
+          title="CSS3"
+          ><i class="fa-brands fa-css3-alt" aria-hidden="true"></i
+        ></span>
+        <span
+          class="tool-icon js-icon"
+          role="img"
+          aria-label="Vanilla JavaScript"
+          title="Vanilla JavaScript"
+          ><i class="fa-brands fa-js" aria-hidden="true"></i
+        ></span>
+        <span
+          class="tool-icon figma-icon"
+          role="img"
+          aria-label="Figma"
+          title="Figma"
+          ><i class="fa-brands fa-figma" aria-hidden="true"></i
+        ></span>
+        <span class="tool-icon git-icon" role="img" aria-label="Git" title="Git"
+          ><i class="fa-brands fa-git-alt" aria-hidden="true"></i
+        ></span>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <div class="projects-intro">
+        <div>
+          <p class="projects-label">MY CATALOGUE OF</p>
+          <h2>PROJECTS</h2>
+        </div>
+        <p class="projects-summary">
+          A selection of things I've tried my hands on.
+        </p>
+      </div>
+
+      <div class="projects-list">
+        <article class="project-row">
+          <p class="project-number">01</p>
+          <div class="project-details">
+            <p class="project-category">FRONTEND &bull; PERSONAL</p>
+            <h3>SIMONE PORTFOLIO</h3>
+            <p class="project-description">
+              A personal frontend portfolio focused on expressive storytelling,
+              polished interfaces, and a clear visual identity.
+            </p>
+            <a
+              href="https://simone-designs-beau.vercel.app/"
+              class="project-link cta-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >VIEW PROJECT <span>&#8599;</span></a
+            >
+          </div>
+          <div class="project-preview">
+            <img
+              class="project-image"
+              src="images/portfolio-thumbnail.png"
+              alt="SIMONE PORTFOLIO preview"
+            />
+          </div>
+        </article>
+
+        <article class="project-row">
+          <p class="project-number">02</p>
+          <div class="project-details">
+            <p class="project-category">UI/UX &bull; FRONTEND</p>
+            <h3>CARA</h3>
+            <p class="project-description">
+              A fashion and e-commerce concept designed to feel editorial,
+              modern, and easy to shop.
+            </p>
+            <a
+              href="https://e-commerce-website-eight-azure.vercel.app/"
+              class="project-link cta-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >VIEW PROJECT <span>&#8599;</span></a
+            >
+          </div>
+          <div class="project-preview">
+            <img
+              class="project-image"
+              src="images/cara-thumbnail.png"
+              alt="CARA preview"
+            />
+          </div>
+        </article>
+
+        <article class="project-row">
+          <p class="project-number">03</p>
+          <div class="project-details">
+            <p class="project-category">FRONTEND &bull; TECH</p>
+            <h3>NEXT</h3>
+            <p class="project-description">
+              A technology-focused website exploring digital products, brand
+              communication, and clean product storytelling.
+            </p>
+            <a
+              href="https://tech-website-plum.vercel.app/"
+              class="project-link cta-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >VIEW PROJECT <span>&#8599;</span></a
+            >
+          </div>
+          <div class="project-preview">
+            <img
+              class="project-image"
+              src="images/NEXT-thumbnail.png"
+              alt="NEXT preview"
+            />
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-layout">
+        <div class="contact-intro">
+          <p class="contact-label">CONTACT</p>
+          <h2>LET'S TALK.</h2>
+          <p class="contact-text">
+            Have a project, opportunity, or idea you'd like to discuss? I'd love
+            to hear from you.
+          </p>
+        </div>
+
+        <div class="contact-panel">
+          <form class="contact-form" action="#" method="post">
+            <div class="field-group">
+              <label for="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Your name"
+              />
+            </div>
+
+            <div class="field-group">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Your email"
+              />
+            </div>
+
+            <div class="field-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me a little about your idea..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="contact-submit cta-link">
+              SEND MESSAGE <span>↗</span>
+            </button>
+          </form>
+
+          <div class="contact-socials" aria-label="Social links">
+            <a
+              href="https://github.com/simonebytes"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fa-brands fa-github" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/simone-okechukwu"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://instagram.com/quee_nsimone"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>© 2026 — Built by Simone, powered by creativity.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
