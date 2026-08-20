@@ -598,6 +598,115 @@ PROFILE BLOCK
   background-color: var(--dark);
 }
 
+.projects-intro {
+  display: grid;
+  grid-template-columns: 1fr minmax(220px, 0.7fr);
+  align-items: end;
+  gap: 2rem;
+
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--muted-rose);
+}
+
+.projects-label,
+.project-category {
+  color: #c7adb5;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+}
+
+.projects-intro h2 {
+  margin-top: 10px;
+
+  color: var(--pink);
+  font-family: "Bebas Neue", cursive;
+  font-size: clamp(4rem, 8vw, 7rem);
+  font-weight: 900;
+  line-height: 0.8;
+}
+
+.projects-summary {
+  max-width: 300px;
+
+  color: #c7adb5;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.project-row {
+  display: grid;
+  grid-template-columns: minmax(4rem, 0.35fr) minmax(16rem, 1fr) minmax(
+      14rem,
+      0.8fr
+    );
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: center;
+
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--muted-rose);
+}
+
+.project-number {
+  color: var(--rose);
+  font-family: "Bebas Neue", cursive;
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 0.8;
+}
+
+.project-details h3 {
+  margin-top: 10px;
+
+  color: var(--pink);
+  font-family: "Bebas Neue", cursive;
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  font-weight: 900;
+  line-height: 0.85;
+}
+
+.project-description {
+  max-width: 360px;
+  margin-top: 16px;
+
+  color: #c7adb5;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.project-link {
+  margin-top: 20px;
+  padding-bottom: 7px;
+  color: var(--pink);
+  font-size: 13px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--muted-rose);
+}
+
+.project-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  border-left: 1px solid var(--muted-rose);
+}
+
+.project-image {
+  display: block;
+  width: min(100%, 520px);
+  max-height: 360px;
+  object-fit: contain;
+  border: 1px solid var(--muted-rose);
+  border-radius: 4px;
+  transition: transform 0.25s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.02);
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
 .contact-section {
   padding: 4rem 10% 5rem;
   scroll-margin-top: var(--navbar-height);
@@ -733,109 +842,13 @@ PROFILE BLOCK
   transform: translateY(-1px);
 }
 
-.projects-intro {
-  display: grid;
-  grid-template-columns: 1fr minmax(220px, 0.7fr);
-  align-items: end;
-  gap: 2rem;
-
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--muted-rose);
-}
-
-.projects-label,
-.project-category {
-  color: #c7adb5;
-  font-size: 13px;
-  letter-spacing: 0.12em;
-}
-
-.projects-intro h2 {
-  margin-top: 10px;
-
-  color: var(--pink);
-  font-family: "Bebas Neue", cursive;
-  font-size: clamp(4rem, 8vw, 7rem);
-  font-weight: 900;
-  line-height: 0.8;
-}
-
-.projects-summary {
-  max-width: 300px;
-
-  color: #c7adb5;
-  font-size: 14px;
-  line-height: 1.8;
-}
-
-.project-row {
-  display: grid;
-  grid-template-columns: minmax(4rem, 0.35fr) minmax(16rem, 1fr) minmax(
-      14rem,
-      0.8fr
-    );
-  gap: clamp(1.5rem, 4vw, 4rem);
-  align-items: center;
-
-  padding: 2.5rem 0;
-  border-bottom: 1px solid var(--muted-rose);
-}
-
-.project-number {
-  color: var(--rose);
-  font-family: "Bebas Neue", cursive;
-  font-size: clamp(3rem, 5vw, 5rem);
-  line-height: 0.8;
-}
-
-.project-details h3 {
-  margin-top: 10px;
-
-  color: var(--pink);
-  font-family: "Bebas Neue", cursive;
-  font-size: clamp(2.5rem, 4vw, 4.5rem);
-  font-weight: 900;
-  line-height: 0.85;
-}
-
-.project-description {
-  max-width: 360px;
-  margin-top: 16px;
-
-  color: #c7adb5;
-  font-size: 14px;
-  line-height: 1.8;
-}
-
-.project-link {
-  margin-top: 20px;
-  padding-bottom: 7px;
-  color: var(--pink);
-  font-size: 13px;
-  text-decoration: none;
-  border-bottom: 1px solid var(--muted-rose);
-}
-
-.project-preview {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 220px;
-  border-left: 1px solid var(--muted-rose);
-}
-
-.project-image {
-  display: block;
-  width: min(100%, 520px);
-  max-height: 360px;
-  object-fit: contain;
-  border: 1px solid var(--muted-rose);
-  border-radius: 4px;
-  transition: transform 0.25s ease;
-}
-
-.project-image:hover {
-  transform: scale(1.02);
+.form-status {
+  margin-top: 1rem;
+  color: var(--muted-rose);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  min-height: 1.2rem;
 }
 
 .site-footer {

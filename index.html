@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 
     <title>Simone || Designer</title>
 
@@ -310,7 +311,16 @@
         </div>
 
         <div class="contact-panel">
-          <form class="contact-form" action="#" method="post">
+          <form
+            class="contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="d063f8c1-db5c-4cd7-9fad-85f0e8294af1"
+            />
             <div class="field-group">
               <label for="name">Name</label>
               <input
@@ -318,6 +328,7 @@
                 name="name"
                 type="text"
                 placeholder="Your name"
+                required
               />
             </div>
 
@@ -328,6 +339,7 @@
                 name="email"
                 type="email"
                 placeholder="Your email"
+                required
               />
             </div>
 
@@ -338,6 +350,7 @@
                 name="message"
                 rows="5"
                 placeholder="Tell me a little about your idea..."
+                required
               ></textarea>
             </div>
 
@@ -345,6 +358,8 @@
               SEND MESSAGE <span>↗</span>
             </button>
           </form>
+
+          <p class="form-status" id="form-status" aria-live="polite"></p>
 
           <div class="contact-socials" aria-label="Social links">
             <a

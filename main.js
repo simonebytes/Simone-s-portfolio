@@ -143,3 +143,35 @@ if (sections.length) {
 
   sections.forEach((section) => sectionObserver.observe(section));
 }
+
+const contactForm = document.querySelector(".contact-form");
+const formStatus = document.querySelector("#form-status");
+
+contactForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(contactForm);
+
+  formStatus.textContent = "SENDING...";
+  contactForm.querySelector("button").disabled = true;
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      formStatus.textContent = "MESSAGE SENT ✓";
+      contactForm.reset();
+    } else {
+      formStatus.textContent = "Something went wrong. Please try again.";
+    }
+  } catch (error) {
+    formStatus.textContent = "Something went wrong. Please try again.";
+  } finally {
+    contactForm.querySelector("button").disabled = false;
+  }
+});
